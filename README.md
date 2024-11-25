@@ -13,7 +13,7 @@ Adventour es un proyecto de código abierto; Le invitamos a explorar su código 
 
 ## Captura de pantalla
 
-![Demostración de escritorio Tourest](./Adventour.png "Demostración de escritorio")
+![Demostración de escritorio Tourest](./Viaje.png  "Demostración de escritorio")
 
 ## Herramientas necesarias
 Todo lo que necesitas es un editor de texto de tu preferencia. No se necesitan instalaciones complejas ni configuraciones de software.
