@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regístrese aquí</title>
+    <link rel="icon" href="./assets/files/logo.png" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/booking.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+        <nav aria-label="Menú principal">
+            <img src="./assets/files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels">
+            <ul class="navbar" role="navigation">
+                <li>
+                    <a href="index.html" aria-label="Ir al inicio">Inicio</a>
+                    <a href="./index.html#package" aria-label="Ver paquetes">Paquetes</a>
+                    <a href="./index.html#locations" aria-label="Ver ubicaciones">Ubicaciones</a>
+                    <a href="./info.html" aria-label="Acerca de nosotros">Acerca de nosotros</a>
+                    <a href="./contact.html" aria-label="Contáctenos">Contáctenos</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="booking">
+        <h1>Reserva online ahora</h1>
+        <p>Por favor complete este formulario con la información requerida</p>
+        <form action="">
+            <fieldset>
+                <legend>Formulario de reserva</legend>
+                <label for="firstname">Nombre de pila: *</label>
+                <input type="text" class="data" name="firstname" id="firstname" placeholder="Enter first name" required aria-required="true" />
+                
+                <label for="lastname">Apellido: *</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter last name" required aria-required="true" />
+
+                <label for="email">Correo electrónico: *</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email" required aria-required="true" />
+
+                <label for="phone">Número de teléfono: *</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter Phone number" required aria-required="true" />
+
+                <label for="check-in-date">Fecha de Entrada: *</label>
+                <input type="date" name="check-in-date" id="check-in-date" required aria-required="true" />
+
+                <label for="check-out-date">Fecha de salida: *</label>
+                <input type="date" name="check-out-date" id="check-out-date" required aria-required="true" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Información de alojamiento</legend>
+
+                <label for="accomodation">Tipo de alojamiento: *</label>
+                <select name="accomodation" id="accomodation" aria-label="Seleccione el tipo de alojamiento">
+                    <option value="">Seleccione uno</option>
+                    <option value="1">Hotel</option>
+                    <option value="2">Autoservicio</option>
+                    <option value="3">Hostel</option>
+                    <option value="4">Guesthouse</option>
+                </select><br>
+
+                <label for="room">Número de habitación: *</label>
+                <input type="number" name="age" min="1" max="120" id="room" class="room" required aria-required="true" /><br><br>
+
+                <label>Tipo de habitación: *</label><br>
+                <label>
+                    <input type="radio" name="room-type" class="inline" value="single" aria-label="Habitación individual" /> Habitación Individual
+                </label><br>
+                <label>
+                    <input type="radio" name="room-type" class="inline" value="double" aria-label="Habitación doble" /> Habitación Doble
+                </label><br>
+                <label>
+                    <input type="radio" name="room-type" class="inline" value="triple" aria-label="Habitación triple" /> Habitación triple
+                </label><br>
+                <label>
+                    <input type="radio" name="room-type" class="inline" value="quadruple" aria-label="Dormitorio cuádruple" /> Dormitorio cuádruple
+                </label>
+
+                <label for="additional">Solicitudes adicionales</label>
+                <textarea name="additional" rows="5" cols="30" id="additional" placeholder="Tu mensaje..." aria-label="Añadir solicitud adicional"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Enviar" ONCLICK="alert('¡Reservado exitosamente! \nDisfruta tu viaje')" class="submit-btn" aria-label="Enviar formulario" />
+        </form>
+    </div>
+
+</body>
+
+<!-- Footer -->
+
+<section class="footer" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="visually-hidden">Pie de página</h2>
+    <div class="foot">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="./booking.html">Registrarse</a></li>
+                    <li><a href="./info.html">Acerca de nosotros</a></li>
+                    <li><a href="./contact.html">Contáctenos</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Conectar</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/damian.aguirremartinez.7?mibextid=LQQJ4d" target="_blank" aria-label="Facebook de Damian Aguirre"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/damianaguirremartinez?igsh=eHZybWJ5dGY0M3F0&utm_source=qr" target="_blank" aria-label="Instagram de Damian Aguirre"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/aguirre-martinez-damian-28973a2bb/" target="_blank" aria-label="LinkedIn de Damian Aguirre"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/DamianMartinez2002" target="_blank" aria-label="GitHub de Damian Aguirre"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2024 Viaje sin fronteras  Todos los derechos reservados.<br>Sitio web desarrollado por: Damian Aguirre Martinez</p>
+    </div>
+</section>
+
+<!-- Javascript -->
+
+<script>
+    let calendar = document.querySelector('.calendar')
+
+    const month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+    isLeapYear = (year) => {
+        return (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) || (year % 100 === 0 && year % 400 === 0)
+    }
+
+    getFebDays = (year) => {
+        return isLeapYear(year) ? 29 : 28
+    }
+
+    generateCalendar = (month, year) => {
+
+        let calendar_days = calendar.querySelector('.calendar-days')
+        let calendar_header_year = calendar.querySelector('#year')
+
+        let days_of_month = [31, getFebDays(year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+        calendar_days.innerHTML = ''
+
+        let currDate = new Date()
+        if (month > 11 || month < 0) month = currDate.getMonth()
+        if (!year) year = currDate.getFullYear()
+
+        let curr_month = `${month_names[month]}`
+        month_picker.innerHTML = curr_month
+        calendar_header_year.innerHTML = year
+
+        // get first day of month
+
+        let first_day = new Date(year, month, 1)
+
+        for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
+            let day = document.createElement('div')
+            if (i >= first_day.getDay()) {
+                day.classList.add('calendar-day-hover')
+                day.innerHTML = i - first_day.getDay() + 1
+                day.innerHTML += `<span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>`
+                if (i - first_day.getDay() + 1 === currDate.getDate() && year === currDate.getFullYear() && month === currDate.getMonth()) {
+                    day.classList.add('curr-date')
+                }
+            }
+            calendar_days.appendChild(day)
+        }
+    }
+
+    let month_list = calendar.querySelector('.month-list')
+
+    month_names.forEach((e, index) => {
+        let month = document.createElement('div')
+        month.innerHTML = `<div data-month="${index}">${e}</div>`
+        month.querySelector('div').onclick = () => {
+            month_list.classList.remove('show')
+            curr_month.value = index
+            generateCalendar(index, curr_year.value)
+        }
+        month_list.appendChild(month)
+    })
+
+    let month_picker = calendar.querySelector('#month-picker')
+
+    month_picker.onclick = () => {
+        month_list.classList.add('show')
+    }
+
+    let currDate = new Date()
+
+    let curr_month = {
+        value: currDate.getMonth()
+    }
+    let curr_year = {
+        value: currDate.getFullYear()
+    }
+
+    generateCalendar(curr_month.value, curr_year.value)
+
+    document.querySelector('#prev-year').onclick = () => {
+        --curr_year.value
+        generateCalendar(curr_month.value, curr_year.value)
+    }
+
+    document.querySelector('#next-year').onclick = () => {
+        ++curr_year.value
+        generateCalendar(curr_month.value, curr_year.value)
+    }
+</script>
+
+</body>
+
+</html>

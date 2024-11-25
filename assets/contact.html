@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="./assets/files/logo.png">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body class="contactbody">
+    <nav aria-label="Menú principal">
+        <img src="./assets/files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels">
+        <ul class="navbar" role="navigation">
+            <li>
+                <a href="./index.html" aria-label="Ir al inicio">Inicio</a>
+                <a href="./index.html#package" aria-label="Ver paquetes">Paquetes</a>
+                <a href="./index.html#locations" aria-label="Ver ubicaciones">Ubicaciones</a>
+                <a href="./info.html" aria-label="Acerca de nosotros">Acerca de nosotros</a>
+                <a href="./contact.html" aria-label="Contáctenos">Contáctenos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="contact" aria-labelledby="contact-heading">
+        <h1 id="contact-heading">Contacto <span>Us</span></h1>
+        <hr>
+        <p>Valoramos sus comentarios, consultas y sugerencias, y nos complace saber de usted. Si tiene una pregunta sobre nuestros productos o servicios, necesita ayuda con un pedido o simplemente desea compartir sus pensamientos, este es el lugar para comunicarse con nosotros.</p>
+        
+        <div class="contact-form">
+            <form action="" aria-labelledby="contact-form">
+                <h2 id="contact-form" class="visually-hidden">Formulario de contacto</h2>
+                <label for="name">Nombre: *</label>
+                <input type="text" name="myname" id="name" placeholder="Introduzca el nombre" required aria-required="true" aria-label="Introduce tu nombre">
+
+                <label for="email">Correo electrónico: *</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese el correo electrónico" required aria-required="true" aria-label="Introduce tu correo electrónico">
+
+                <label for="phone">Número de teléfono: *</label>
+                <input type="text" name="phone" id="phone" placeholder="Ingrese el número de teléfono" required aria-required="true" aria-label="Introduce tu número de teléfono">
+
+                <label for="subject">Asunto: *</label>
+                <input type="text" name="subject" id="subject" placeholder="¿Qué te trae por aquí?" required aria-required="true" aria-label="Introduce el asunto de tu mensaje">
+
+                <label for="message">Mensaje: *</label>
+                <textarea name="mensaje" id="message" cols="30" rows="10" placeholder="Tu mensaje" required aria-required="true" aria-label="Introduce tu mensaje"></textarea>
+
+                <button type="submit" class="submit-btn" aria-label="Enviar formulario" onclick="alert('¡Gracias! \nSu respuesta fue enviada')">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="visually-hidden">Pie de página</h2>
+        <div class="foot">
+            <div class="footer-content">
+                <div class="footlinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./booking.html" aria-label="Registrarse">Registrarse</a></li>
+                        <li><a href="./info.html" aria-label="Acerca de nosotros">Acerca de nosotros</a></li>
+                        <li><a href="./contact.html" aria-label="Contáctenos">Contáctenos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footlinks">
+                    <h4>Conectar</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com/damian.aguirremartinez.7?mibextid=LQQJ4d" target="_blank" aria-label="Facebook de Damian Aguirre"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/damianaguirremartinez?igsh=eHZybWJ5dGY0M3F0&utm_source=qr" target="_blank" aria-label="Instagram de Damian Aguirre"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/aguirre-martinez-damian-28973a2bb/" target="_blank" aria-label="LinkedIn de Damian Aguirre"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/DamianMartinez2002" target="_blank" aria-label="GitHub de Damian Aguirre"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="end">
+            <p>Copyright © 2024 Adventour Todos los derechos reservados.<br>Sitio web desarrollado por: Damian Aguirre Martinez</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

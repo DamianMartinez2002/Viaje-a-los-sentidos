@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje a los Sentidos</title>
+    <link rel="icon" href="./assets/files/logo.png">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+
+    <!-- Background Video & Header -->
+
+    <div class="banner">
+        <video src="./assets/files/bgvid.mp4" type="video/mp4" autoplay muted loop></video>
+
+        <!-- Header -->
+        
+
+        <div class="content" id="home">
+            <nav role="navigation" aria-label="Menú principal">
+                <img src="./assets/files/logo.png" class="logo" alt="Logo de FirstFlight Travels" title="FirstFlight Travels">
+                <ul class="navbar">
+                    <li>
+                        <a href="#home" aria-label="Ir a la sección Inicio">Inicio</a>
+                        <a href="#package" aria-label="Ir a la sección Paquetes">Paquetes</a>
+                        <a href="#locations" aria-label="Ir a la sección Ubicaciones">Ubicaciones</a>
+                        <a href="./info.html" aria-label="Ir a la página Acerca de nosotros">Acerca de nosotros</a>
+                        <a href="./contact.html" aria-label="Ir a la página Contáctenos">Contáctenos</a>
+                    </li>
+                </ul>
+            </nav>
+            
+              
+
+            <div class="title">
+                <h1>AVENTURA</h1>
+                <p>¡Vea el mundo por menos! Explore destinos increíbles con nuestros paquetes económicos.</p>
+            
+                <div class="wrapper">
+                    <form action="#" aria-labelledby="form-title">
+                        <div id="form-title" class="h5 font-weight-bold text-center mb-3">Busca tu destino</div>
+            
+                        <!-- Introducir destino -->
+                        <div class="destination">
+                            <label for="city-input">Introduce tu destino</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="city-input" class="form-control" placeholder="Ingrese su nombre" aria-describedby="city-desc">
+                        </div>
+            
+                        <!-- Introducir fecha -->
+                        <div class="destination">
+                            <label for="date-input">Introduce tu fecha</label>
+                        </div>
+                        <div class="form-group">
+                            <input autocomplete="off" type="date" id="date-input" class="form-control" placeholder="Seleccione su fecha" aria-label="Selecciona una fecha">
+                        </div>
+            
+                        <!-- Seleccionar precio máximo -->
+                        <div class="form-group">
+                            <div class="lable_total flex">
+                                <label class="destination" for="price-slider">
+                                    Precio máximo: <span id="slider-value" aria-live="polite">2500</span>
+                                </label>
+                            </div>
+                            <input id="price-slider" type="range" min="0" max="10000" value="2500" 
+                                style="width: 215px;" aria-valuemin="0" aria-valuemax="10000" 
+                                aria-valuenow="2500" aria-labelledby="price-label">
+                            <script>
+                                const slider = document.getElementById("price-slider");
+                                const result = document.getElementById("slider-value");
+            
+                                slider.oninput = function () {
+                                    result.innerText = this.value;
+                                    slider.setAttribute("aria-valuenow", this.value);
+                                };
+                            </script>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+                    </form>
+                </div>
+
+                <a href="./booking.html" class="button">
+                    <span class="material-symbols-outlined">
+                        how_to_reg
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+  <!-- Services -->
+<section class="container" aria-labelledby="services-title">
+    <div class="text">
+        <h2 id="services-title">¡Tenemos los mejores servicios disponibles para ti!</h2>
+    </div>
+    <div class="rowitems">
+
+        <div class="container-box" role="article" aria-labelledby="flight-services-title">
+            <div class="container-image">
+                <img src="./assets/files/1a.jpg" alt="Imagen representativa de Servicios de vuelo">
+            </div>
+            <h4 id="flight-services-title">Servicios de vuelo</h4>
+            <p>Llegada y Salida</p>
+        </div>
+
+        <div class="container-box" role="article" aria-labelledby="food-services-title">
+            <div class="container-image">
+                <img src="./assets/files/2a.jpg" alt="Imagen representativa de Servicios de alimentación">
+            </div>
+            <h4 id="food-services-title">Servicios de alimentación</h4>
+            <p>Abastecimiento</p>
+        </div>
+
+        <div class="container-box" role="article" aria-labelledby="travel-services-title">
+            <div class="container-image">
+                <img src="./assets/files/3a.jpg" alt="Imagen representativa de Servicios de viaje">
+            </div>
+            <h4 id="travel-services-title">Servicios de viaje</h4>
+            <p>Recoger/dejar</p>
+        </div>
+
+        <div class="container-box" role="article" aria-labelledby="hotel-services-title">
+            <div class="container-image">
+                <img src="./assets/files/4a.jpg" alt="Imagen representativa de Servicios hoteleros">
+            </div>
+            <h4 id="hotel-services-title">Servicios hoteleros</h4>
+            <p>Entrada/salida</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Packages -->
+<section class="package" id="package" aria-labelledby="package-title">
+    <div class="package-title">
+        <h2 id="package-title">Paquetes</h2>
+    </div>
+
+    <div class="package-content">
+        <div class="text-block">
+            <h3>Destinos más vendidos</h3>
+        </div>
+
+        <a href="./package.html#2700" aria-label="Paquete desde 2.700 dólares">
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/p1.jpg" alt="Paquete turístico desde 2.700 dólares">
+                    <h3>Desde 2.700 dólares</h3>
+                </div>
+            </div>
+        </a>
+
+        <a href="./package.html#4999" aria-label="Paquete desde 4.999 dólares">
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/p2.jpg" alt="Paquete turístico desde 4.999 dólares">
+                    <h3>Desde 4.999 dólares</h3>
+                </div>
+            </div>
+        </a>
+
+        <a href="./package.html#9999" aria-label="Paquete desde 9.999 dólares">
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/p3.jpg" alt="Paquete turístico desde 9.999 dólares">
+                    <h3>Desde 9.999 dólares</h3>
+                </div>
+            </div>
+        </a>
+
+        <a href="./package.html#30000" aria-label="Paquete desde 30.000 dólares">
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/p4.jpg" alt="Paquete turístico desde 30.000 dólares">
+                    <h3>Desde 30.000 dólares</h3>
+                </div>
+            </div>
+        </a>
+
+        <a href="./package.html#37700" aria-label="Paquete desde 37.700 dólares">
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pac1.jpeg" alt="Paquete turístico desde 37.700 dólares">
+                    <h3>Desde 37.700 dólares</h3>
+                </div>
+            </div>
+        </a>
+
+        <a href="./package.html#47500" aria-label="Paquete desde 47.500 dólares">
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pac1.jpg" alt="Paquete turístico desde 47.500 dólares">
+                    <h3>Desde 47.500 dólares</h3>
+                </div>
+            </div>
+        </a>
+
+        <a href="./package.html#58500" aria-label="Paquete desde 58.500 dólares">
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pac3.jpg" alt="Paquete turístico desde 58.500 dólares">
+                    <h3>Desde 58.500 dólares</h3>
+                </div>
+            </div>
+        </a>
+
+        <a href="./package.html#59500" aria-label="Paquete desde 59.500 dólares">
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pac7.jpg" alt="Paquete turístico desde 59.500 dólares">
+                    <h3>Desde 59.500 dólares</h3>
+                </div>
+            </div>
+        </a>
+
+        <a href="./package.html#59500" aria-label="Paquete desde 65.500 dólares">
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/l3.jpg" alt="Paquete turístico desde 65.500 dólares">
+                    <h3>Desde 65.500 dólares</h3>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<section>
+    <div class="pack4-content">
+        <div style="text-align:center">
+            <button type="button" class="btn btn-primary">
+                <a href="./booking.html" aria-label="Ir a la página de reservas">
+                    Reserva ahora
+                </a>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="package2" id="package">
+    <div class="pack5-content">
+        <div class="text-block">
+            <h3>Los más vendidos en descuentos EPIC</h3>
+            <p>Obtenga nuestros paquetes más vendidos.</p>
+        </div>
+
+        <div class="box" role="article" aria-labelledby="egypt-package">
+            <div class="image">
+                <img src="./assets/files/pack5.1.jpg" alt="Paquete turístico a Egipto">
+                <h3 id="egypt-package">Egipto</h3>
+            </div>
+        </div>
+
+        <div class="box" role="article" aria-labelledby="los-angeles-package">
+            <div class="image">
+                <img src="./assets/files/usa.avif" alt="Paquete turístico a Los Angeles">
+                <h3 id="los-angeles-package">Los Angeles</h3>
+            </div>
+        </div>
+
+        <div class="box" role="article" aria-labelledby="norway-package">
+            <div class="image">
+                <img src="./assets/files/pac2.3.jpg" alt="Paquete turístico a Noruega">
+                <h3 id="norway-package">Noruega</h3>
+            </div>
+        </div>
+
+        <div class="box" role="article" aria-labelledby="bali-package">
+            <div class="image">
+                <img src="./assets/files/pac2.4.webp" alt="Paquete turístico a Bali">
+                <h3 id="bali-package">Bali</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="package2" id="package">
+    <div class="package2-content">
+        <div class="text-block">
+            <h3>Ofertas de premios mayores en los paquetes más vendidos</h3>
+            <p>¡Ahorra más con nuestras ofertas exclusivas!</p>
+        </div>
+
+        <a href="./assets/package.html#6000" aria-label="Paquete a Tailandia con oferta especial">
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pac2.1.jpg" alt="Paquete turístico a Tailandia">
+                    <h3>Tailandia</h3>
+                </div>
+            </div>
+        </a>
+
+        <div class="box" role="article" aria-labelledby="goa-package">
+            <div class="image">
+                <img src="./assets/files/pack2.2.jpg" alt="Paquete turístico a Goa">
+                <h3 id="goa-package">Goa</h3>
+            </div>
+        </div>
+
+        <div class="box" role="article" aria-labelledby="norway-discount-package">
+            <div class="image">
+                <img src="./assets/files/pac2.3.jpg" alt="Paquete turístico a Noruega">
+                <h3 id="norway-discount-package">Noruega</h3>
+            </div>
+        </div>
+
+        <div class="box" role="article" aria-labelledby="bali-discount-package">
+            <div class="image">
+                <img src="./assets/files/pac2.4.webp" alt="Paquete turístico a Bali">
+                <h3 id="bali-discount-package">Bali</h3>
+            </div>
+        </div>
+
+        <a href="./package.html#6000" aria-label="Paquete a Islandia con oferta especial">
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pac2.5.jpg" alt="Paquete turístico a Islandia">
+                    <h3>Islandia</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+
+      <!-- Explore Button -->
+<div style="text-align:center">
+    <button type="button" class="btn btn-primary">
+        <a href="package.html" aria-label="Explorar más paquetes turísticos">Explora más</a>
+    </button>
+</div>
+</section><br><hr><br>
+
+<!-- Locations -->
+<section class="locations" id="locations" aria-labelledby="locations-title">
+    <div class="package-title">
+        <h2 id="locations-title">Ubicaciones</h2>
+    </div>
+
+    <div class="location-content">
+        <a href="./locations.html" aria-label="Explorar ubicación en India, Kashmir">
+            <div class="col-content">
+                <img src="./assets/files/l1.jpg" alt="Vista panorámica de Kashmir, India">
+                <h5>India</h5>
+                <p>Kashmir</p>
+            </div>
+        </a>
+
+        <a href="./locations.html#istanbul" aria-label="Explorar ubicación en Turquía, Estambul">
+            <div class="col-content">
+                <img src="./assets/files/l2.jpg" alt="Vista de Estambul, Turquía">
+                <h5>Turquía</h5>
+                <p>Estambul</p>
+            </div>
+        </a>
+
+        <a href="./locations.html#paris" aria-label="Explorar ubicación en Francia, París">
+            <div class="col-content">
+                <img src="./assets/files/l3.jpg" alt="Vista de la Torre Eiffel, París, Francia">
+                <h5>Francia</h5>
+                <p>París</p>
+            </div>
+        </a>
+
+        <a href="./locations.html#bali" aria-label="Explorar ubicación en Indonesia, Bali">
+            <div class="col-content">
+                <img src="./assets/files/l4.jpg" alt="Vista de las playas de Bali, Indonesia">
+                <h5>Indonesia</h5>
+                <p>Bali</p>
+            </div>
+        </a>
+
+        <a href="./locations.html#dubai" aria-label="Explorar ubicación en Emiratos Árabes Unidos, Dubai">
+            <div class="col-content">
+                <img src="./assets/files/l5.jpg" alt="Vista de los rascacielos de Dubai, Emiratos Árabes Unidos">
+                <h5>Emiratos Árabes Unidos</h5>
+                <p>Dubai</p>
+            </div>
+        </a>
+
+        <a href="./locations.html#geneva" aria-label="Explorar ubicación en Suiza, Ginebra">
+            <div class="col-content">
+                <img src="./assets/files/l6.jpg" alt="Vista del lago de Ginebra, Suiza">
+                <h5>Suiza</h5>
+                <p>Ginebra</p>
+            </div>
+        </a>
+
+        <a href="./locations.html#port-blair" aria-label="Explorar ubicación en Andaman & Nicobar, Puerto Blair">
+            <div class="col-content">
+                <img src="./assets/files/l7.jpg" alt="Vista de Puerto Blair, Andaman & Nicobar">
+                <h5>Andaman & Nicobar</h5>
+                <p>Puerto Blair</p>
+            </div>
+        </a>
+    </div>
+</section><br><hr>
+
+
+ <!-- FAQ's -->
+
+<section><br>
+    <div class="destination-title">
+        <h2 id="destination-title">Los mejores destinos para visitar en MEXICO</h2>
+    </div>
+    <div class="container1" aria-labelledby="destination-title">
+        <style>
+            .destination-title {
+                text-align: center;
+            }
+
+            .container1 {
+                display: grid;
+                position: relative;
+                grid-template-columns: auto auto auto;
+                background-color: #f6f1f1;
+                padding: 48px;
+                font-size: 12px;
+                gap: 10px;
+                margin-top: 5px;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 1px;
+            }
+
+            .loc-detail li {
+                font-size: 10px;
+                color: black;
+                margin-left: 15px;
+                margin-bottom: 2px;
+                list-style-type: circle;
+            }
+
+            .box {
+                background: inherit;
+                color: black;
+                box-shadow: 5px 5px 10px #3b3737;
+                padding: 5px;
+                border-radius: 15px;
+            }
+        </style>
+
+        <div class="box" aria-labelledby="comala">
+            <h1 id="comala">Comala, Colima</h1>
+            <p>Comala es conocido como el “Pueblo Blanco de América”, y esto se debe a sus tradicionales techos de teja colorada y sus altas fachadas de color blanco que resplandecen... <br><br>
+                <b>Mejor época para visitar:</b> Octubre a Diciembre <br><br>
+                <b>Los mejores lugares para visitar:</b>
+            </p>
+            <ul class="loc-detail" aria-labelledby="comala">
+                <li>Nogueras</li>
+                <li>La Nogalera</li>
+                <li>Laguna de la Maria</li>
+                <li>Jardín Principal</li>
+                <li>Suchitlan</li>
+                <li>Remudadero</li>
+            </ul>
+            <br> También puede incluir las poco convencionales playas de Manzanillo en sus paquetes turísticos de vacaciones, ya que fue catalogada entre una de las 20 mejores playas del Mundo.
+        </div>
+
+        <div class="box" aria-labelledby="guadalajara">
+            <h1 id="guadalajara">Guadalajara, Jalisco</h1>
+            <p>La primera vez que Guadalajara fue fundada había sido en 1532, en Nochistlán, apenas habitada por 42 personas... <br><br>
+                <b>Mejor época para visitar:</b> de septiembre a marzo <br><br>
+                <b>Los mejores lugares para visitar:</b>
+            </p>
+            <ul class="loc-detail" aria-labelledby="guadalajara">
+                <li>Sree Padmanabhaswamy Temple</li>
+                <li>Francis CSI Church</li>
+                <li>Paradesi Synagogue</li>
+                <li>Eravikulam National Park</li>
+                <li>Varkala Beach</li>
+            </ul>
+        </div>
+
+        <div class="box" aria-labelledby="michoacan">
+            <h1 id="michoacan">Michoacán</h1>
+            <p>Durante décadas, el valle de Cachemira ha atraído a turistas de todo el mundo... <br><br>
+                <b>Mejor época para visitar:</b> marzo a agosto <br><br>
+                <b>Los mejores lugares para visitar:</b>
+            </p>
+            <ul class="loc-detail" aria-labelledby="michoacan">
+                <li>Gulmarg</li>
+                <li>Srinagar</li>
+                <li>Dal Lake</li>
+                <li>Sonamarg</li>
+                <li>Indira Gandhi Tulip Garden</li>
+            </ul>
+        </div>
+
+        <div class="box" aria-labelledby="monterrey">
+            <h1 id="monterrey">Monterrey</h1>
+            <p>Si está buscando un destino indio que sea apto para un paquete de gira mundial... <br><br>
+                <b>Mejor época para visitar:</b> marzo a mayo <br><br>
+                <b>Los mejores lugares para visitar:</b>
+            </p>
+            <ul class="loc-detail" aria-labelledby="monterrey">
+                <li>Gangtok</li>
+                <li>Nathu La Pass</li>
+                <li>Tsomgo Lake</li>
+                <li>Rumtek Monastery</li>
+            </ul>
+        </div>
+
+        <div class="box" aria-labelledby="colima">
+            <h1 id="colima">Colima</h1>
+            <p>¡Shimla, la Reina de las Colinas, es de lo que están hechos los viajes de ensueño a la India! ... <br><br>
+                <b>Mejor época para visitar:</b> Mayo a junio/diciembre a enero <br><br>
+                <b>Los mejores lugares para visitar:</b>
+            </p>
+            <ul class="loc-detail" aria-labelledby="colima">
+                <li>The Ridge</li>
+                <li>Green Valley</li>
+                <li>Mall Road</li>
+                <li>Jakhoo Hill</li>
+            </ul>
+        </div>
+
+        <div class="box" aria-labelledby="estado-mexico">
+            <h1 id="estado-mexico">Estado de México</h1>
+            <p>Hay muchos viajes a la India que mantienen a Uttarakhand a la vanguardia... <br><br>
+                <b>Mejor época para visitar:</b> Marzo a abril/septiembre a octubre <br><br>
+                <b>Los mejores lugares para visitar:</b>
+            </p>
+            <ul class="loc-detail" aria-labelledby="estado-mexico">
+                <li>Dehradun</li>
+                <li>Mussoorie</li>
+                <li>Nainital</li>
+                <li>Auli</li>
+                <li>Rishikesh</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="faq" aria-labelledby="faq-title">
+
+    <div class="container2" aria-labelledby="faq-title">
+        <style>
+            .container2 {
+                display: grid;
+                position: relative;
+                grid-template-columns: auto auto auto;
+                gap: 5%;
+                padding: 35px;
+                margin-top: 50px;
+                margin-left: 35px;
+                margin-right: 34px;
+                border-radius: 10px;
+                font-size: 12px;
+                color: black;
+                background-color: white;
+                box-shadow: 5px 5px 10px #3b3737;
+            }
+
+            .faq-question {
+                font-weight: bold;
+                color: #3b3737;
+            }
+
+            .faq-answer {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            .faq-item {
+                padding: 15px;
+                margin-bottom: 10px;
+                background-color: #f6f1f1;
+                border-radius: 8px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+
+        <h2 id="faq-title">Preguntas Frecuentes</h2>
+
+        <div class="faq-item" role="region" aria-labelledby="faq1-title">
+            <h3 id="faq1-title" class="faq-question">¿Cómo hacer una reserva?</h3>
+            <p class="faq-answer">Para hacer una reserva, simplemente seleccione el destino y las fechas en la página de paquetes, luego siga las instrucciones para completar el proceso de pago.</p>
+        </div>
+
+        <div class="faq-item" role="region" aria-labelledby="faq2-title">
+            <h3 id="faq2-title" class="faq-question">¿Qué métodos de pago aceptan?</h3>
+            <p class="faq-answer">Aceptamos pagos con tarjeta de crédito, PayPal y transferencias bancarias. Todos los métodos son seguros y verificados.</p>
+        </div>
+
+        <div class="faq-item" role="region" aria-labelledby="faq3-title">
+            <h3 id="faq3-title" class="faq-question">¿Puedo modificar mi reserva?</h3>
+            <p class="faq-answer">Sí, puedes modificar tu reserva con al menos 48 horas de antelación. Para más detalles, visita nuestra sección de políticas de reserva.</p>
+        </div>
+
+        <div class="faq-item" role="region" aria-labelledby="faq4-title">
+            <h3 id="faq4-title" class="faq-question">¿Qué hacer si necesito cancelar mi reserva?</h3>
+            <p class="faq-answer">Si necesitas cancelar tu reserva, puedes hacerlo a través de tu cuenta en el sitio web o contactando con nuestro servicio de atención al cliente.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="faq">
+    <div>
+        <h1 class="faqh1">Preguntas Frecuentes</h1>
+    </div>
+
+    <div class="faq-item">
+        <h3>¿Qué tipo de destinos puedo elegir para viajar?</h3>
+        <p>Puede elegir cualquier destino para viajar según su estado de ánimo. Para unas vacaciones llenas de acción, puede elegir vida silvestre, trekking y otros destinos de aventura. Para unas vacaciones románticas con esa persona especial, puede elegir entre una variedad de destinos ideales para parejas. También puede elegir el tipo de vacaciones que desea, según el destino que le guste, ya sean colinas, montañas, playas, patrimonio o lugares de peregrinación.</p>
+        <hr>
+    </div>
+
+    <div class="faq-item">
+        <h3>¿Puedo optar por unas vacaciones económicas?</h3>
+        <p>Sí, puedes. Lo único que tienes que hacer es fijar en tu mente un importe aproximado de gasto antes de empezar a explorar las ideas aquí. Puede buscar un destino adecuado para su viaje en cualquier rango desde Rs. 10.000 a 50.000 rupias. Es recomendable hacer todas las reservas con antelación para evitar cambios en los precios.</p>
+        <hr>
+    </div>
+
+    <div class="faq-item">
+        <h3>¿Qué época del año es la más adecuada para reservar unas vacaciones?</h3>
+        <p>Se pueden reservar vacaciones durante todo el año. Sólo necesitas seleccionar el mes en el que estás planificando viajar. Nuestra lista seleccionada de ideas está diseñada de tal manera que solo podrás ver aquellos destinos más adecuados para ese mes del año en particular. Si seleccionas una combinación de filtros que definen tu mes, presupuesto y propósito de viaje, obtendrás el destino adecuado con otros detalles.</p>
+        <hr>
+    </div>
+
+    <div class="faq-item">
+        <h3>¿Qué obtendré de una idea para las vacaciones?</h3>
+        <p>Una vez que elijas un destino, te brindará detalles completos de todas las características únicas de ese lugar que no debes perderte, incluidos los sitios locales más visitados, los mejores lugares para hospedarse y todas las experiencias memorables que puedes disfrutar. Se te brindarán múltiples opciones de hoteles, resorts y casas de huéspedes para elegir dependiendo de tu presupuesto.</p>
+        <hr>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+    <div class="newstext">
+        <h2>Hoja informativa</h2>
+        <p>¡Suscríbete para recibir ofertas y las últimas actualizaciones cada semana!</p>
+    </div>
+
+    <div class="send">
+        <form action="#">
+            <input type="email" name="emailid" placeholder="E-mail" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="./booking.html">Registrarse</a></li>
+                    <li><a href="./info.html">Acerca de nosotros</a></li>
+                    <li><a href="./contact.html">Contáctenos</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Conectar</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/damian.aguirremartinez.7?mibextid=LQQJ4d" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/damianaguirremartinez?igsh=eHZybWJ5dGY0M3F0&utm_source=qr" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/aguirre-martinez-damian-28973a2bb/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/DamianMartinez2002" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fin">
+        <p>Copyright © 2024 Adventour Todos los derechos reservados.<br>Sitio web desarrollado por: Damian Aguirre Martinez</p>
+    </div>
+</section>
+
+<!-- Script de parpadeo -->
+<script type="text/javascript">
+    function JavaBlink() {
+        var blinks = document.getElementsByTagName('JavaBlink');
+        for (var i = blinks.length - 1; i >= 0; i--) {
+            var s = blinks[i];
+            s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+        }
+        window.setTimeout(JavaBlink, 500);
+    }
+
+    if (document.addEventListener) {
+        document.addEventListener("DOMContentLoaded", JavaBlink, false);
+    } else if (window.addEventListener) {
+        window.addEventListener("load", JavaBlink, false);
+    } else if (window.attachEvent) {
+        window.attachEvent("onload", JavaBlink);
+    } else {
+        window.onload = JavaBlink;
+    }
+</script>
+
+</body>
+
+</html>
