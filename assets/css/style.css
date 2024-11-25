@@ -124,7 +124,7 @@ nav ul li a {
   font-size: 12px;
   padding: 10px 30px;
   color: #73d4d4;
-  box-shadow: -1px 3px 3px 0 rgba(80, 80, 80, 0.2);
+  box-shadow: -1px 3px 3px 0 #5e03fc33;
   background-color: white;
   border-radius: 20px;
   text-decoration: none;
